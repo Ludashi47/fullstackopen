@@ -1,0 +1,7 @@
+User: Inputs the content and clicks the button.
+
+Broswer: Posts the content to the server as JSON. Then waits for the response of the server.
+
+Server: Receives the content, updates the database, and sends back a 201 Created response to the browser.
+
+Broswer: Receives the response, uses the Javascript code to fetch the updated list of notes and then renders them.

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Note App</title>
+  <link rel="stylesheet" href="main.css">
+  <style>
+    .container {
+      padding: 10px;
+      border: 1px solid gray;
+    }
+    #notes-list {
+      list-style: none;
+      color: blue;
+    }
+  </style>
+  <script src="main.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Notes</h1>
+    
+    <ul id="notes-list">
+      <li>Note 1</li>
+      <li>Note 2</li>
+    </ul>
+
+    <form action="/new_note" method="POST">
+      <input type="text" name="note" />
+      <button type="submit">Save</button>
+    </form>
+  </div>
+
+</body>
+</html>
