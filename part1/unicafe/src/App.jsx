@@ -4,7 +4,16 @@ const Header = ({ title }) => <h1>{title}</h1>
 
 const Button = ({ title, onClick }) => (<button onClick={onClick}>{title}</button>)
 
-const Info = ({title, value}) => (<div>{title} {value}</div>)
+const Info = ({ title, value }) => (<div>{title} {value}</div>)
+
+const FurtherInfo = ({ value1, value2, value3 }) => (
+  <div>
+    <p>all {value1 + value2 + value3}</p>
+    <p>average {(value1 - value3) / (value1 + value2 + value3)}</p>
+    <p>positive {(value1 / (value1 + value2 + value3)) * 100} %</p>
+  </div>
+
+)
 
 const App = () => {
   // save clicks of each button to its own state
@@ -26,6 +35,7 @@ const App = () => {
       <Info title="good" value={good} />
       <Info title="neutral" value={neutral} />
       <Info title="bad" value={bad} />
+      <FurtherInfo value1={good} value2={neutral} value3={bad} />
     </div>
   )
 }
