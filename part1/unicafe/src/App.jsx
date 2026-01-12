@@ -9,14 +9,7 @@ const Statistics = ({ value1, value2, value3 }) => {
 
   if (all === 0) {
     return (
-      <div>
-        <div>good {value1}</div>
-        <div>neutral {value2}</div>
-        <div>bad {value3}</div>
-        <div>all {all}</div>
-        <div>average 0</div>
-        <div>positive 0%</div>
-      </div>
+      <div>No feedback given</div>
     )
   }
 
